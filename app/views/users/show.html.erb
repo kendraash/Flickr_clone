@@ -1,0 +1,9 @@
+<h3>Hi, <%= @user.email %></h3>
+<hr>
+
+<button name="button"><%= link_to "New Post", new_post_path(current_user) %> </button>
+
+<% @posts.each do |post| %>
+    <h4> <%= post.caption %> </h4>
+    <%= image_tag post.image.url(:medium) %>
+<% end %>

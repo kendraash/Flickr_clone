@@ -13,7 +13,7 @@ gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'devise'
 gem 'paperclip', '~> 4.1'
-
+gem 'hirb'
 group :development, :test do
   gem 'quiet_assets'
   gem 'byebug'
@@ -26,6 +26,6 @@ group :development, :test do
   gem 'capybara-rails'
   gem 'factory_girl_rails'
   gem 'simplecov', require: false
-  
+
 
 end

@@ -1,0 +1,8 @@
+<%= render 'layouts/errors', :object => @post %>
+<%= form_for @post do |f|%>
+  <%= f.label :caption %>
+  <%= f.text_field :caption %>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <%= f.submit "Submit" %>
+<% end %>
