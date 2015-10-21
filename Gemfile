@@ -12,7 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'devise'
-
+gem 'paperclip', '~> 4.1'
 
 group :development, :test do
   gem 'quiet_assets'
