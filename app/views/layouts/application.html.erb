@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>FlikrClone</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-<%= flash[:notice] %>
-<%= flash[:alert] %>
-
-</body>
+  <head>
+    <title>FlikrClone</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <% if user_signed_in? %>
+          Logged in as <strong> <%= current_user.email %> </strong>
+          <%= link_to "logout", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "login", new_user_session_path %>
+          <%= link_to "signup", new_user_registration_path %>
+        <% end %>
+      </nav>
+      <%= yield %>
+      <%= flash[:notice] %>
+      <%= flash[:alert] %>
+    </div>
+  </body>
 </html>
