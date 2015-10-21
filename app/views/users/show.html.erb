@@ -1,9 +1,15 @@
 <h3>Hi, <%= @user.email %></h3>
+<button name="button"><%= link_to "New Post", new_post_path(current_user) %> </button>
 <hr>
 
-<button name="button"><%= link_to "New Post", new_post_path(current_user) %> </button>
 
-<% @posts.each do |post| %>
-    <h4> <%= post.caption %> </h4>
-    <%= image_tag post.image.url(:medium) %>
-<% end %>
+<div class="row">
+  <% @posts.each do |post| %>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <h4><%= post.caption %></h4>
+        <%= image_tag post.image.url(:medium) %>
+      </div>
+    </div>
+  <% end %>
+</div>

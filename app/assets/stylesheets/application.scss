@@ -1,2 +1,51 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+body {
+  background-color: #262525;
+  color: #D9D2D4;
+}
+.nav navbar-default {
+  text-align: center;
+}
+
+img {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  margin: none;
+
+}
+
+.thumbnail {
+  border: none;
+  background: none;
+  padding: none !important;
+  margin: none;
+  text-align: center;
+}
+
+.col-md-4 {
+  padding: none !important;
+}
+
+input {
+  border-radius: 5px;
+  border-style: none;
+}
+
+.container {
+  padding-bottom: 10px;
+}
+
+input#user_email {
+  margin-bottom: 10px;
+}
+
+input#user_password_confirmation {
+  margin-bottom: 10px;
+}
+
+input#user_password {
+  margin-bottom: 10px;
+}

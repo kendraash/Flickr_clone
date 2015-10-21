@@ -7,16 +7,44 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div class="container">
-      <nav>
+
+      <!-- <nav >
         <% if user_signed_in? %>
-          Logged in as <strong> <%= current_user.email %> </strong>
+          Logged in as <strong> <%= current_user.email %> </strong> |
           <%= link_to "logout", destroy_user_session_path, method: :delete %>
         <% else %>
           <%= link_to "login", new_user_session_path %>
           <%= link_to "signup", new_user_registration_path %>
         <% end %>
+      </nav> -->
+
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">Flikr Copy</a>
+          </div>
+
+          <ul class="nav navbar-nav">
+            <% if user_signed_in? %>
+            <li><%= link_to "#{current_user.email}", user_path(current_user) %></li>
+            <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
+            <% else %>
+            <li><%= link_to "login", new_user_session_path %></li>
+            <li><%= link_to "signup", new_user_registration_path %></li>
+            <% end %>
+
+          </ul>
+        </div>
       </nav>
+
+
+
+
+
+
+
+      <div class="container">
       <%= yield %>
       <%= flash[:notice] %>
       <%= flash[:alert] %>

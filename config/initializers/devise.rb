@@ -24,12 +24,13 @@ Devise.setup do |config|
   require 'devise/orm/active_record'
 
 
-  config.case_insensitive_keys = [:email]
+  config.case_insensitive_keys = [:username]
 
   # Configure which authentication keys should have whitespace stripped.
   # These keys will have whitespace before and after removed upon creating or
   # modifying a user and when used to authenticate or find a user. Default is :email.
-  config.strip_whitespace_keys = [:email]
+  config.strip_whitespace_keys = [:username]
+  config.authentication_keys = [ :username ]
 
 
   config.password_length = 8..72
