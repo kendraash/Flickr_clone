@@ -518,6 +518,9 @@
       "/Users/Guest/Desktop/flikr_clone/app/models/user.rb": [
         1,
         null,
+        1,
+        1,
+        null,
         null,
         1,
         null,
@@ -547,6 +550,8 @@
         1,
         1,
         1,
+        1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/flikr_clone/spec/factories.rb": [
@@ -566,17 +571,19 @@
         1,
         2,
         2,
-        null,
+        2,
+        2,
         null
       ],
       "/Users/Guest/Desktop/flikr_clone/spec/models/user_spec.rb": [
         1,
         null,
         1,
-        null,
+        2,
+        2,
         null
       ]
     },
-    "timestamp": 1445451406
+    "timestamp": 1445451587
   }
 }
