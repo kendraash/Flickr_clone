@@ -5,6 +5,8 @@
         1,
         null,
         1,
+        null,
+        1,
         1,
         0,
         0,
@@ -447,6 +449,7 @@
         null,
         1,
         0,
+        null,
         0,
         null,
         0,
@@ -463,8 +466,35 @@
         1,
         null,
         null
+      ],
+      "/Users/Guest/Desktop/Flickr_clone/spec/models/comment_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/Guest/Desktop/Flickr_clone/spec/models/post_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/Guest/Desktop/Flickr_clone/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null
       ]
     },
-    "timestamp": 1445550019
+    "timestamp": 1445555235
   }
 }
