@@ -14,6 +14,7 @@ gem 'bcrypt'
 gem 'devise'
 gem 'paperclip', '~> 4.1'
 gem 'hirb'
+gem 'rails_12factor'
 group :development, :test do
   gem 'quiet_assets'
   gem 'byebug'
@@ -26,6 +27,5 @@ group :development, :test do
   gem 'capybara-rails'
   gem 'factory_girl_rails'
   gem 'simplecov', require: false
-
-
 end
+ruby "2.2.0"
