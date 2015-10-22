@@ -3,11 +3,41 @@
 
 body {
   background-color: #262525;
-  color: #D9D2D4;
+  color: #ffffff;
+  background: url('/assets/index.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.nav navbar-default {
-  text-align: center;
+
+// .field {
+//   text-align: center;
+// }
+
+// .container.center {
+//   text-align: center;
+//   margin-top: 60px;
+// }
+
+.navbar.navbar-inverse {
+  border-radius: 0px;
+
+  a {
+    color: white;
+  }
+  a:hover {
+    color: grey;
+  }
+  li > a {
+    color: white;
+  }
+  li > a:hover {
+    color: grey;
+  }
 }
+
+
 
 img {
   border-style: solid;
@@ -32,6 +62,16 @@ img {
 input {
   border-radius: 5px;
   border-style: none;
+  color: black;
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+input:focus {
+  outline: 0;
+  background-color: black;
+  color: white;
 }
 
 .container {
@@ -48,4 +88,13 @@ input#user_password_confirmation {
 
 input#user_password {
   margin-bottom: 10px;
+}
+
+.centered {
+  text-align: center;
+  margin-top: 30%;
+}
+
+input#search {
+  margin-top: 7%;
 }

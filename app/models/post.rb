@@ -4,4 +4,12 @@ class Post < ActiveRecord::Base
   belongs_to :user
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
   validates_presence_of :caption
+
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['name LIKE ?', "%#{search}"])
+    else
+      find(:all)
+    end
+  end
 end
