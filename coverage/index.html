@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-10-22T14:40:19-07:00">2015-10-22T14:40:19-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-10-22T16:07:15-07:00">2015-10-22T16:07:15-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">76.55%</span></span>
+    (<span class="covered_percent"><span class="red">78.88%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.77
+         0.85
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>25</b> files in total.
-    <b>145</b> relevant lines. 
-    <span class="green"><b>111</b> lines covered</span> and
+    <b>28</b> files in total.
+    <b>161</b> relevant lines. 
+    <span class="green"><b>127</b> lines covered</span> and
     <span class="red"><b>34</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -113,7 +113,7 @@
       <tr>
         <td class="strong"><a href="#8140781f46a621dd14c20e7df6687283452b85df" class="src_link" title="app/models/post.rb">app/models/post.rb</a></td>
         <td class="red strong">70.0 %</td>
-        <td>15</td>
+        <td>16</td>
         <td>10</td>
         <td>7</td>
         <td>3</td>
@@ -282,12 +282,42 @@
       
       <tr>
         <td class="strong"><a href="#8c1a46bb291de383eb6000cc8984efd762f6b2e2" class="src_link" title="spec/features/add_post_pages_spec.rb">spec/features/add_post_pages_spec.rb</a></td>
-        <td class="red strong">30.0 %</td>
-        <td>13</td>
-        <td>10</td>
-        <td>3</td>
+        <td class="red strong">36.36 %</td>
+        <td>15</td>
+        <td>11</td>
+        <td>4</td>
         <td>7</td>
-        <td>0.3</td>
+        <td>0.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2341e741227accd2402fd5671cee785d5644a84b" class="src_link" title="spec/models/comment_spec.rb">spec/models/comment_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>7</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#9b3af6f89b38faa06d7e8456c7ae724457becce4" class="src_link" title="spec/models/post_spec.rb">spec/models/post_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>1.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ae2582b62396d3db22bfadb00a916e3c3927d6ec" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -1014,37 +1044,43 @@
           <code class="ruby">    if search</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">      find(:all, :conditions =&gt; [&#39;name LIKE ?&#39;, &quot;%#{search}&quot;])</code>
+          <code class="ruby">      # find(:all, :conditions =&gt; [&#39;caption LIKE ?&#39;, &quot;%#{search}&quot;])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">    where(&#39;caption ILIKE ?&#39;, &quot;#{search}%&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
+        <li class="missed" data-hits="0" data-linenumber="13">
           
           
           <code class="ruby">      find(:all)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
@@ -2779,10 +2815,10 @@
         <div class="source_table" id="8c1a46bb291de383eb6000cc8984efd762f6b2e2">
   <div class="header">
     <h3>spec/features/add_post_pages_spec.rb</h3>
-    <h4><span class="red">30.0 %</span> covered</h4>
+    <h4><span class="red">36.36 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>11</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>7</b> lines missed.</span>
     </div>
   </div>
@@ -2808,61 +2844,253 @@
           <code class="ruby">describe &#39;path for adding a post&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="4">
           
-          <code class="ruby">  @user = FactoryGirl.create(:user)</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="5">
-          
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
           <code class="ruby">  it &quot;adds a new post&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    visit user_path(@user)</code>
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="7">
           
           
-          <code class="ruby">    click_on_link &quot;New Post&quot;</code>
+          <code class="ruby">    login_as(user, :scope =&gt; :user) #need to login with the generated factorygirl user</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="8">
           
           
-          <code class="ruby">    fill_in &quot;Caption&quot;, :with =&gt; &quot;Tree&quot;</code>
+          <code class="ruby">    visit user_path(@user)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="9">
           
           
-          <code class="ruby">    attach_file &quot;image&quot;, File.absolute_path(green.jpg)</code>
+          <code class="ruby">    click_on_link &quot;New Post&quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="10">
           
           
-          <code class="ruby">    click_on &quot;Submit&quot;</code>
+          <code class="ruby">    fill_in &quot;Caption&quot;, :with =&gt; &quot;Tree&quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="11">
           
           
+          <code class="ruby">    attach_file &quot;image&quot;, File.absolute_path(green.jpg)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    click_on &quot;Submit&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
           <code class="ruby">    expect(page).to have_content &quot;Tree&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="2341e741227accd2402fd5671cee785d5644a84b">
+  <div class="header">
+    <h3>spec/models/comment_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Comment do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it {should validate_presence_of :content}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it {should belong_to :post}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it {should belong_to :user}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="9b3af6f89b38faa06d7e8456c7ae724457becce4">
+  <div class="header">
+    <h3>spec/models/post_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Post do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should have_attached_file :image }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of :caption }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should belong_to :user}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should have_many :comments}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="ae2582b62396d3db22bfadb00a916e3c3927d6ec">
+  <div class="header">
+    <h3>spec/models/user_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe User do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it {should have_many :comments}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it {should have_many :posts}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">end</code>

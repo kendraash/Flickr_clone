@@ -1,0 +1,21 @@
+
+Is the Github documentation - commits and README - thorough and descriptive?
+  Needs a README!!
+Is there good spec coverage?
+  80% test coverage is pretty good! Needs more integration specs.
+Do all specs pass?
+  All unit tests pass. The only spec that doesn't is your only integration spec. Factorygirl is a pain.
+Is the application logic clear and easy to navigate?
+  yes
+Can you make a test payment through Stripe?
+  Nope!
+Is the site user-friendly?
+  Intuitive UI. Looks clean and welcoming
+Are there opportunities for refactoring?
+  Nope, pretty clean code
+What features stand out?
+  Image search bar is awesome.
+What features could be improved?
+  Existing features are all good. Would recommend additional features such as comments, liking, tagging, etc.
+Do you have any additional constructive criticism or positive feedback to share?
+  
